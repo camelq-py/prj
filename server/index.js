@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend's URL
+    origin: 'http://localhost:5173',
     credentials: true
 }));
 
@@ -28,7 +28,9 @@ app.use(session({
     store: MongoStore.create({
         mongoUrl: process.env.MONGO_URI
     }),
-    cookie: { maxAge: 24 * 60 * 60 * 1000 } // 1 day
+    cookie: {
+        maxAge: 24 * 60 * 60 * 1000 // 1 day
+    }
 }));
 
 app.listen(process.env.PORT, () => {
@@ -62,7 +64,6 @@ app.post("/login", async (req, res) => {
             const passwordMatch = await bcrypt.compare(password, user.password);
             if (passwordMatch) {
                 req.session.user = { id: user._id, name: user.name, email: user.email };
-                // console.log(email);
                 console.log(user.name);
                 res.json("Success");
             } else {

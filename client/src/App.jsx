@@ -2,9 +2,8 @@ import {React, useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/Home";
 import Login from "./Components/Login";
-import SignUp from "./Components/SignUp";
+import SignUp from "./Components/Signup";
 import { Navbar } from "./Components/Navbar";
-// import ProtectedRoute from "./Components/ProtectedRoute";
 import axios from "axios";
 
 function App() {

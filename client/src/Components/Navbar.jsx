@@ -7,20 +7,22 @@ import Button from '@mui/material/Button';
 import Logout from './Logout';
 
 export const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
-    const button={marginRight:'10px', fontSize:'14px', fontWeight:'500', padding:'6px'}
+    const login_button={marginRight:'10px', fontSize:'14px', fontWeight:'500', padding:'6px', backgroundColor:"deeppink"}
+    const signup_button={marginRight:'10px', fontSize:'14px', fontWeight:'500', padding:'6px', backgroundColor:"#7819d1"}
+
     return (
-            <AppBar sx={{ bgcolor: 'transparent', borderBottom:"solid #ca0ee8 1px" }}>
+            <AppBar sx={{ bgcolor: 'transparent' }}>
                 <Toolbar>
-                    <Typography variant="h4" component="div" sx={{ flexGrow: 1, color:'white', fontFamily:"Roboto", fontWeight:"700" }}>
+                    <Typography style={{textShadow:"0 0 5px black, 0 0 10px deeppink, 0 0 15px deeppink, 0 0 20px black" }} variant="h4" component="div" sx={{ flexGrow: 1, color:'white', fontFamily:"Roboto", fontWeight:"700" }}>
                         Code Yourself
                     </Typography>
                     {!isLoggedIn ? (
                         <>
-                            <Button variant="contained" style={button} color="error" component={Link} to="/login">
+                            <Button variant="contained" style={login_button} component={Link} to="/login">
                                 Login 
                             </Button>
 
-                            <Button variant="contained" style={button} color="success" component={Link} to="/signup">
+                            <Button variant="contained" style={signup_button} color="primary" component={Link} to="/signup">
                                 Signup
                             </Button>
                         </>
