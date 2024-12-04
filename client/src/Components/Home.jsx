@@ -61,7 +61,7 @@ function Home() {
                     textShadow: "0 0 5px black, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff",
                 }}
             >
-                welcome hellooooooooo{user && user.name} !!</h1>
+                welcome {user && user.name} !!</h1>
             
         </div>
     );
