@@ -1,0 +1,201 @@
+.why-course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.why-course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.why-course-content p {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.why-course-image {
+    height: 400px;
+    width: 400px;
+}
+
+.courses-container p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.courses-container h1 {
+    background-color: rgb(176, 218, 210);
+    margin-top: 0;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(55, 14, 120);
+
+}
+
+.course-objective-container {
+    padding: 20px;
+    background-color: cornsilk;
+}
+
+.course-objective {
+    list-style-type: none;
+    /* Numbered list */
+    padding-left: 20px;
+    /* Add some space on the left side for the numbers */
+    text-align: left;
+}
+
+/* For unordered lists inside the ordered list */
+.course-objective ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.course-objective-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.course-objective-point {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.opportunities-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.opportunities-container div {
+    background-color: rgb(214, 199, 180);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+    border-radius: 20px;
+    color: #7b0b35;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.opportunities-container div:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width:300px) and (max-width:768px) {
+    .why-course-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: antiquewhite;
+    }
+    
+    .why-course-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 4px;
+    }
+    
+    .why-course-content p {
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .why-course-image {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .courses-container p {
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .courses-container h1 {
+        background-color: rgb(176, 218, 210);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 24px;
+        padding: 10px;
+        font-weight: bold;
+        color: rgb(55, 14, 120);
+    
+    }
+
+    
+    
+    .course-objective-container {
+        padding: 4px;
+        background-color: cornsilk;
+    }
+    
+    .course-objective {
+        list-style-type: none;
+        padding-left: 10px;
+        text-align: left;
+    }
+    
+
+    .course-objective ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: left;
+    }
+    
+    
+    .course-objective-heading {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .course-objective-point {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .opportunities-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .opportunities-container div {
+        background-color: rgb(214, 199, 180);
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        color: #7b0b35;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    .opportunities-container div:hover {
+        transform: scale(1.1);
+    }
+    
+}

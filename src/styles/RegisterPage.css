@@ -1,0 +1,210 @@
+.register-page {
+    background-image: url("../../public/images/bg.jpg");
+    background-size: cover;
+    color: antiquewhite;
+    padding: 20px;
+    height: 80vh;
+
+}
+
+.register-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name-input,
+.email-input {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    color: beige;
+    text-align: center;
+    border: rgb(232, 232, 17) solid 1px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: left;
+    transition: all 0.3s;
+
+}
+.course-input {
+    font-size: 16px;
+    width: 32%;
+    color: white;
+    text-align: center;
+    border: rgb(232, 232, 17) solid 1px;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.course-input option {
+    font-size: 12px;
+    text-align: left;
+    background-color: rgb(196, 220, 228);
+    color: rgb(1, 0, 1);
+}
+
+.name-input:hover,
+.email-input:hover,
+.course-input:hover {
+    box-shadow: 0 0 15px 10px rgba(34, 214, 73, 0.2);
+    background-color: transparent;
+    padding: 10px;
+}
+
+.register-heading {
+
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+input::placeholder {
+    color: aquamarine;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+@media (min-width:300px) and (max-width:599px) {
+
+    .register-page {
+        background-image: url("../../public/images/bg.jpg");
+        background-size: cover;
+        color: antiquewhite;
+        padding: 10px;
+        height: 80vh;
+
+    }
+
+    .register-page form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .name-input,
+    .email-input {
+        margin: 8px;
+        padding: 8px;
+        width: 60%;
+        color: beige;
+        text-align: center;
+        border: rgb(232, 232, 17) solid 1px;
+        border-radius: 6px;
+        transition: all 0.2s;
+        background-color: transparent;
+        font-size: 18px;
+        text-align: left;
+
+    }
+    .course-input {
+        font-size: 16px;
+        width: 64%;
+        color: white;
+        text-align: center;
+        border: rgb(232, 232, 17) solid 1px;
+        border-radius: 6px;
+        background-color: transparent;
+        font-size: 18px;
+        text-align: left;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+    .course-input option {
+        font-size: 8px;
+        text-align: left;
+        background-color: rgb(8, 180, 237);
+        color: rgb(44, 37, 44);
+        padding: 0;
+        margin: 0;
+    }
+
+    .name-input:hover,
+    .email-input:hover,
+    .course-input:hover {
+        box-shadow: 0 0 15px 10px rgba(34, 214, 73, 0.2);
+        background-color: transparent;
+        padding: 14px;
+    }
+
+    .register-heading {
+
+        margin-top: 0;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    input::placeholder {
+        color: aquamarine;
+        font-size: 14px;
+        text-align: left;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:999px) {
+
+    .register-page {
+        background-image: url("../../public/images/bg.jpg");
+        background-size: cover;
+        color: antiquewhite;
+        padding: 16px;
+        height: 80vh;
+
+    }
+
+    .register-page form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .name-input,
+    .email-input,
+    .course-input {
+        margin: 8px;
+        padding: 8px;
+        width: 40%;
+        color: beige;
+        text-align: center;
+        border: rgb(232, 232, 17) solid 1px;
+        border-radius: 10px;
+        transition: all 0.2s;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: left;
+
+
+    }
+
+    .name-input:hover,
+    .email-input:hover,
+    .course-input:hover {
+        box-shadow: 0 0 15px 10px rgba(34, 214, 73, 0.2);
+        background-color: transparent;
+        padding: 14px;
+    }
+
+    .register-heading {
+
+        margin-top: 0;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    input::placeholder {
+        color: aquamarine;
+        font-size: 14px;
+        text-align: left;
+    }
+
+}

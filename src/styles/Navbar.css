@@ -1,0 +1,96 @@
+.navbar {
+    background-color: rgb(38, 146, 213);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px;
+
+}
+
+/* Logo styling */
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+/* Navbar links (hidden by default on mobile) */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar link styling */
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 4px;
+    transition: background-color 0.2s, padding 0.2s, box-shadow 0.2s, border-radius 0.2s;
+}
+
+/* Navbar link hover effect */
+.navbar .nav-links a:hover {
+    background-color: #0b0b09;
+    padding: 14px;
+    box-shadow: 1px 1px 14px 10px rgba(190, 222, 7, 0.2);
+    border-radius: 6px;
+}
+
+/* Hamburger icon styling (visible only on mobile) */
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Show hamburger icon on mobile */
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Hide nav-links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* When menu is open, show the nav links */
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Adjust the styling of each link */
+    .navbar .nav-links a {
+        margin: 10px 0;
+        padding: 12px;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+/* For very small screens */
+@media (min-width:300px) and (max-width: 999px) {
+    .navbar {
+        padding: 4px 4px;
+    }
+
+    .logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .navbar .nav-links a {
+        padding: 4px;
+        font-size: 14px;
+        margin: 0;
+        text-align: right;
+        margin-right: 10px;
+    }
+}

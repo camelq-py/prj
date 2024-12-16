@@ -1,0 +1,91 @@
+.about-us-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public/images/bg.jpg");
+    background-size: cover;
+    color: white;
+    height: 80vh;
+
+}
+
+.about-us {
+    width: 50%;
+    line-height: 24px;
+}
+
+.about-us h2 {
+    font-size: 40px;
+}
+
+.about-us p {
+    font-size: 22px;
+}
+
+button {
+    padding: 10px 12px;
+    background-color: rgb(205, 205, 25);
+    border: 1px solid;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s, padding 0.2s, box-shadow 0.2s, border-radius 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    padding: 14px;
+    box-shadow: 0 0 15px 10px rgba(34, 214, 73, 0.2);
+    border-radius: 6px;
+    transition: background-color 0.2s, padding 0.2s, box-shadow 0.2s, border-radius 0.2s;
+
+}
+
+@media (min-width:300px) and (max-width:599px) {
+    .about-us-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/public/images/bg.jpg");
+        background-size: cover;
+        color: white;
+        height: 80vh;
+    
+    }
+    
+    .about-us {
+        width: 90%;
+        line-height: 24px;
+    }
+     
+}
+
+@media (min-width:600px) and (max-width:999px) {
+    .about-us-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/public/images/bg.jpg");
+        background-size: cover;
+        color: white;
+        height: 80vh;
+    
+    }
+    
+    .about-us {
+        width: 80%;
+        line-height: 24px;
+    }
+    .about-us h2 {
+        font-size: 32px;
+    }
+    .about-us p {
+        font-size: 20px;
+    }
+     
+}
