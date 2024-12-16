@@ -1,0 +1,125 @@
+.container1 {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+}
+
+.contacts .right,
+.contacts .left {
+  padding: 50px;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.contacts h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.contacts h4 {
+  margin-top: 20px;
+}
+
+.contacts p {
+  color: grey;
+}
+
+.contacts .items {
+  margin: 30px 0;
+}
+
+.contacts .box p {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.contacts textarea,
+.contacts input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+form .flexSB {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form .flexSB input {
+  flex: 1 1 calc(50% - 10px);
+}
+
+form .flexSB input:nth-child(1) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .container1 {
+    flex-direction: column;
+  }
+
+  .contacts .right,
+  .contacts .left {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .contacts h1 {
+    font-size: 26px;
+  }
+
+  .contacts .items {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts .right,
+  .contacts .left {
+    padding: 20px;
+  }
+
+  .contacts h1 {
+    font-size: 22px;
+  }
+
+  .contacts textarea,
+  .contacts input {
+    padding: 12px;
+  }
+
+  form .flexSB input {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts h1 {
+    font-size: 20px;
+  }
+
+  .contacts h4 {
+    font-size: 16px;
+  }
+
+  .contacts .box p {
+    font-size: 15px;
+  }
+
+  .contacts textarea,
+  .contacts input {
+    padding: 10px;
+  }
+
+  form .flexSB input {
+    margin-bottom: 10px;
+  }
+}
