@@ -1,0 +1,36 @@
+.register{
+    height:100vh;
+    margin-top: -100px;
+}
+.button{
+    margin-bottom: 130px;
+}
+
+.select-wrapper {
+    margin-bottom: 16px; /* Match spacing with TextField */
+  }
+  
+  .select-field {
+    width: 100%; /* Full width */
+    padding: 12px; /* Similar padding as TextField */
+    font-size: 1.3rem; /* Match font size */
+    font-weight: 500; /* Match font weight */
+    border: 1px solid lightslategray; /* Border styling */
+    border-radius: 1rem; /* Rounded corners */
+    outline: none;
+    margin-top: 2rem;
+    
+    background-color: transparent;
+  }
+  
+  .select-field:focus {
+    border-color: #1976d2; /* Blue color for focused state */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focused shadow */
+  }
+  
+  .select-field option {
+    font-size: 1rem; /* Match font size of options */
+  }
+  @media screen and (max-width:900) {
+        
+  }
