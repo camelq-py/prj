@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    margin-left: 30px; /* This will push the logo to the right */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile menu styles */
+.navbar-links.open {
+    display: block;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+
+/* Profile dropdown */
+.profile-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.profile-dropdown a,
+.profile-dropdown .logout-btn {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-dropdown .logout-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Add media query for mobile */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links.open {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-brand {
+        margin-left: 0; /* Logo stays on the left on mobile */
+    }
+}
+
+/* Profile button styling */
+.profile-in {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover effect for Profile button */
+.profile-in:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active state */
+.profile-in:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Focused state */
+.profile-in:focus {
+    outline: 2px solid #4caf50; /* Green outline */
+    outline-offset: 2px;
+}

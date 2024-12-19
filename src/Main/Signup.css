@@ -1,0 +1,98 @@
+/* Container that wraps the sign-up form */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; 
+}
+
+/* Main form styling */
+.signup-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: rgba(221, 202, 31, 0.5); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+}
+
+/* Form title */
+.signup-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Input fields styling */
+.signup-input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9; /* Light gray background for input */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.signup-input:focus {
+    border-color: #5D9BFF; /* Blue border on focus */
+    background: #fff;
+    outline: none;
+}
+
+/* Error message styling */
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: -10px;
+}
+
+/* Submit button styling */
+.signup-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Link to login page */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link-text {
+    color: #2575fc; /* Blue color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link-text:hover {
+    text-decoration: underline;
+}
+
+/* Semi-transparent wrapper for the form */
+.form-wrapper {
+    background: rgba(211, 3, 3, 0.5); /* Semi-transparent red background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+}

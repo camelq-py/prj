@@ -1,0 +1,155 @@
+/* General Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Wrapper */
+.form-wrapper-1{
+    background: rgba(176, 224, 230, 0.8); /* Semi-transparent soft blue gradient */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+}
+
+/* Form Styles */
+.login-form {
+    text-align: center;
+    color: #2c3e50; /* Dark blue-gray for primary text */
+    background: transparent; /* Making the form background transparent */
+}
+
+.form-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Dark text for title */
+}
+
+.form-subheading {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #7f8c8d; /* Soft gray for subtext */
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Very light gray background */
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #3498db; /* Soft blue border on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2); /* Subtle blue glow */
+}
+
+/* Buttons */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* Soft blue for primary button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Google Button */
+.google-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff; /* White background for Google button */
+    color: #555555;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.forgot-link {
+    color: #3498db; /* Soft blue for the link */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Signup Text */
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.signup-link {
+    color: #3498db; /* Soft blue link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
